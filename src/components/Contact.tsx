@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Phone, MapPin, Clock, MessageCircle, Mail, Award } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageCircle, Award } from 'lucide-react';
 import ContactInfo from './contact/ContactInfo';
 
 const Contact = () => {
@@ -51,17 +51,6 @@ const Contact = () => {
       link: "https://wa.me/5561986649007?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20reparo%20do%20meu%20equipamento.",
       bgColor: "bg-green-600 hover:bg-green-700",
       popular: true
-    },
-    {
-      icon: <Mail className="h-8 w-8" />,
-      title: "E-mail",
-      subtitle: "Suporte técnico",
-      info: "recuperaassistencia@gmail.com",
-      description: "Envie detalhes do problema por e-mail. Resposta em até 2 horas no horário comercial.",
-      action: "Enviar E-mail",
-      link: "mailto:recuperaassistencia@gmail.com?subject=Solicitação de Orçamento",
-      bgColor: "bg-black hover:bg-gray-800",
-      popular: false
     },
     {
       icon: <MapPin className="h-8 w-8" />,
@@ -123,7 +112,7 @@ const Contact = () => {
         </div>
 
         {/* Métodos de contato */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           {contactMethods.map((method, index) => (
             <div 
               key={index}
@@ -172,7 +161,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Localização e horários */}
           <div 
-            ref={el => elementsRef.current[6] = el}
+            ref={el => elementsRef.current[5] = el}
             className="opacity-0"
           >
             <h3 className="text-3xl font-bold text-white mb-8">Localização & Horários</h3>
@@ -221,7 +210,7 @@ const Contact = () => {
 
           {/* Mapa */}
           <div 
-            ref={el => elementsRef.current[7] = el}
+            ref={el => elementsRef.current[6] = el}
             className="opacity-0"
           >
             <h3 className="text-3xl font-bold text-white mb-8">Como Chegar</h3>
@@ -242,7 +231,7 @@ const Contact = () => {
 
         {/* Garantias e benefícios */}
         <div 
-          ref={el => elementsRef.current[8] = el}
+          ref={el => elementsRef.current[7] = el}
           className="bg-white/90 backdrop-blur-sm rounded-2xl p-12 text-center mt-20 opacity-0"
         >
           <Award className="h-12 w-12 text-black mx-auto mb-6" />

@@ -52,7 +52,7 @@ const NavBar = () => {
         <div className="flex items-center">
           <a 
             href="#home" 
-            className="flex items-center space-x-3 text-black font-display font-bold text-lg sm:text-xl lg:text-2xl"
+            className="flex items-center space-x-3 font-display font-bold text-lg sm:text-xl lg:text-2xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection('home');
@@ -64,8 +64,18 @@ const NavBar = () => {
               className="h-8 w-auto sm:h-10 lg:h-12"
             />
             <div className="flex flex-col">
-              <span className="hidden sm:inline text-black leading-none">RECUPERA</span>
-              <span className="hidden sm:inline text-xs text-gray-600 leading-none">Assistência Técnica</span>
+              <span className={cn(
+                "hidden sm:inline leading-none transition-colors duration-300",
+                scrolled ? "text-black" : "text-white"
+              )}>
+                RECUPERA
+              </span>
+              <span className={cn(
+                "hidden sm:inline text-xs leading-none transition-colors duration-300",
+                scrolled ? "text-gray-600" : "text-gray-300"
+              )}>
+                Assistência Técnica
+              </span>
             </div>
           </a>
         </div>
