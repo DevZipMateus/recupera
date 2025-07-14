@@ -13,15 +13,25 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-tech-blue/95 backdrop-blur-md text-white pt-14 pb-8 relative z-10 border-t border-white/10">
+    <footer className="bg-black/95 backdrop-blur-md text-white pt-14 pb-8 relative z-10 border-t border-white/10">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-10">
           <div>
-            <h3 className="font-display font-bold text-xl mb-4">
-              Tech<span className="text-accent">Help</span>
-            </h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/5d3ab6d7-376c-4bcb-a236-ea9456f031e3.png" 
+                alt="Recupera Logo" 
+                className="h-10 w-auto"
+              />
+              <div>
+                <h3 className="font-display font-bold text-xl text-white">
+                  RECUPERA
+                </h3>
+                <p className="text-xs text-gray-300">Assistência Técnica</p>
+              </div>
+            </div>
             <p className="text-white/80 mb-4 max-w-sm">
-              Transformamos problemas técnicos em soluções eficazes. Deixe-nos cuidar dos seus eletrônicos enquanto você foca no que realmente importa.
+              Comprometidos com a excelência: cada cliente, cada detalhe, sempre com qualidade. Recuperamos seus equipamentos com dedicação e profissionalismo.
             </p>
           </div>
           
@@ -98,10 +108,18 @@ const Footer = () => {
               Contato
             </h3>
             <address className="not-italic text-white/80 space-y-2">
-              <p>Rua da Tecnologia, 123 - Centro</p>
-              <p>São Paulo - SP, 01234-567</p>
-              <p>+55 (11) 99988-7766</p>
-              <p>contato@techhelp.com.br</p>
+              <p>Quadra 03, Conjunto 12, Casa 01</p>
+              <p>Brasília - DF</p>
+              <p>+55 (61) 98664-9007</p>
+              <p>recuperaassistencia@gmail.com</p>
+              <a 
+                href="https://www.instagram.com/recuperaassistencia" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors duration-300 block"
+              >
+                @recuperaassistencia
+              </a>
             </address>
           </div>
         </div>
@@ -109,7 +127,7 @@ const Footer = () => {
         <hr className="border-white/20 mb-8" />
         
         <div className="text-center text-white/80 text-sm">
-          <p>&copy; {currentYear} TechHelp Soluções. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} Recupera Assistência Técnica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

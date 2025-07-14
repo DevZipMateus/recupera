@@ -7,32 +7,32 @@
 
 @layer base {
   :root {
-    /* Cores primárias - tons de azul e cinza */
-    --background: 215 25% 97%;
-    --foreground: 215 60% 15%;
+    /* Cores primárias - tons de preto, cinza e branco */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
     --card: 0 0% 100%;
-    --card-foreground: 215 60% 15%;
+    --card-foreground: 0 0% 9%;
 
     /* Cores secundárias */
-    --secondary: 210 30% 94%;
-    --secondary-foreground: 215 40% 30%;
-    --muted: 210 30% 94%;
-    --muted-foreground: 215 16% 46%;
-    --accent: 0 84% 60%;
-    --accent-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 9%;
+    --accent-foreground: 0 0% 98%;
     --popover: 0 0% 100%;
-    --popover-foreground: 215 60% 15%;
+    --popover-foreground: 0 0% 9%;
 
     /* Cores de contraste */
-    --primary: 215 70% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
     --tech-green: 142 70% 45%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
     
-    --border: 214 32% 88%;
-    --input: 214 32% 88%;
-    --ring: 215 70% 45%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 0 0% 9%;
 
     --radius: 0.5rem;
   }
@@ -48,7 +48,7 @@
     position: relative;
     min-height: 100vh;
     background: transparent;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -112,7 +112,7 @@
   
   .hero-title {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light mb-4 sm:mb-6 opacity-0 animate-slide-up tracking-tight leading-tight;
-    background: linear-gradient(135deg, hsl(215, 70%, 45%) 0%, hsl(0, 84%, 60%) 100%);
+    background: linear-gradient(135deg, #000000 0%, #404040 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -143,17 +143,17 @@
   
   /* Semi-transparent section backgrounds with drastically reduced opacity */
   .section-bg-semi {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(1px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   
   .section-bg-alt {
-    background: rgba(240, 249, 255, 0.01);
+    background: rgba(240, 240, 240, 0.01);
     backdrop-filter: blur(1px);
-    border-top: 1px solid rgba(240, 249, 255, 0.05);
-    border-bottom: 1px solid rgba(240, 249, 255, 0.05);
+    border-top: 1px solid rgba(240, 240, 240, 0.05);
+    border-bottom: 1px solid rgba(240, 240, 240, 0.05);
   }
   
   .animation-delay-100 {
@@ -185,7 +185,7 @@
   }
   
   .tech-gradient {
-    background: linear-gradient(135deg, hsl(215, 70%, 45%) 0%, hsl(215, 60%, 55%) 50%, hsl(0, 84%, 60%) 100%);
+    background: linear-gradient(135deg, #000000 0%, #404040 50%, #808080 100%);
   }
   
   .service-card {
@@ -193,7 +193,7 @@
   }
   
   .tech-overlay {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(29, 78, 216, 0.85) 50%, rgba(220, 38, 127, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(64, 64, 64, 0.85) 50%, rgba(128, 128, 128, 0.9) 100%);
   }
 
   /* Parallax depth layers */
@@ -217,7 +217,7 @@
     right: 0;
     bottom: 0;
     opacity: 0.15;
-    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.8'%3E%3Ccircle cx='40' cy='40' r='2'/%3E%3Cpath d='M40 30v20M30 40h20M35 35l10 10M45 35l-10 10'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.8'%3E%3Ccircle cx='40' cy='40' r='2'/%3E%3Cpath d='M40 30v20M30 40h20M35 35l10 10M45 35l-10 10'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
   }
 

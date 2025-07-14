@@ -63,8 +63,8 @@ const Hero = () => {
             ref={el => elementsRef.current[0] = el}
             className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 opacity-0 shadow-lg"
           >
-            <Award className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
-            <span className="text-black font-medium text-xs sm:text-sm lg:text-base">+15 Anos de Excelência em Assistência Técnica</span>
+            <Award className="h-4 w-4 sm:h-5 sm:w-5 text-black" />
+            <span className="text-black font-medium text-xs sm:text-sm lg:text-base">Assistência Técnica de Confiança</span>
           </div>
           
           {/* Título principal */}
@@ -78,16 +78,16 @@ const Hero = () => {
               fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
             }}
           >
-            ASSISTÊNCIA TÉCNICA
+            RECUPERA
             <br />
             <span 
               className="font-medium"
               style={{
-                color: '#dc2626',
-                textShadow: '0 4px 40px rgba(220, 38, 38, 0.8)'
+                color: '#ffffff',
+                textShadow: '0 4px 40px rgba(255, 255, 255, 0.8)'
               }}
             >
-              PROFISSIONAL
+              ASSISTÊNCIA TÉCNICA
             </span>
           </h1>
           
@@ -101,9 +101,9 @@ const Hero = () => {
               fontFamily: 'Inter, system-ui, -apple-system, sans-serif'
             }}
           >
-            Especialistas em <span className="text-red-400 font-medium">TVs, Celulares, Computadores e Eletrodomésticos</span>
+            Especialistas em <span className="text-gray-300 font-medium">Celulares, Computadores e Notebooks</span>
             <br className="hidden sm:block" />
-            <span className="block sm:inline"> Diagnóstico gratuito • Garantia assegurada • Atendimento rápido</span>
+            <span className="block sm:inline"> Reparos • Vendas de Acessórios • Orçamento gratuito</span>
           </p>
 
           {/* Estatísticas de credibilidade */}
@@ -113,8 +113,8 @@ const Hero = () => {
             style={{ animationDelay: '600ms' }}
           >
             <div className="bg-white/15 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6 border border-white/20">
-              <div className="text-xl sm:text-2xl lg:text-3xl font-light text-white mb-1">+5.000</div>
-              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Equipamentos Reparados</div>
+              <div className="text-xl sm:text-2xl lg:text-3xl font-light text-white mb-1">Qualidade</div>
+              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Sempre Garantida</div>
             </div>
             <div className="bg-white/15 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6 border border-white/20">
               <div className="flex items-center justify-center mb-2">
@@ -122,11 +122,11 @@ const Hero = () => {
                   <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Avaliação 5 Estrelas</div>
+              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Preço Acessível</div>
             </div>
             <div className="bg-white/15 backdrop-blur-md rounded-xl sm:rounded-2xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6 border border-white/20">
-              <div className="text-xl sm:text-2xl lg:text-3xl font-light text-white mb-1">98%</div>
-              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Taxa de Sucesso</div>
+              <div className="text-xl sm:text-2xl lg:text-3xl font-light text-white mb-1">Variedade</div>
+              <div className="text-xs sm:text-sm text-white/90 font-light tracking-wide">Todas as Marcas</div>
             </div>
           </div>
 
@@ -137,12 +137,12 @@ const Hero = () => {
             style={{ animationDelay: '800ms' }}
           >
             <div className="flex items-center space-x-3 bg-black/50 backdrop-blur-md rounded-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 border border-white/20">
-              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-red-400" />
-              <span className="text-white font-light tracking-wide text-sm sm:text-base">Garantia de 90 Dias</span>
+              <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-gray-300" />
+              <span className="text-white font-light tracking-wide text-sm sm:text-base">Garantia Assegurada</span>
             </div>
             <div className="flex items-center space-x-3 bg-black/50 backdrop-blur-md rounded-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 border border-white/20">
-              <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-red-400" />
-              <span className="text-white font-light tracking-wide text-sm sm:text-base">Diagnóstico em 24h</span>
+              <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-gray-300" />
+              <span className="text-white font-light tracking-wide text-sm sm:text-base">Atendimento Rápido</span>
             </div>
           </div>
           
@@ -153,10 +153,10 @@ const Hero = () => {
             style={{ animationDelay: '1000ms' }}
           >
             <a 
-              href="https://wa.me/5555999887766?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20reparo%20do%20meu%20equipamento." 
+              href="https://wa.me/5561986649007?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20reparo%20do%20meu%20equipamento." 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-5 rounded-xl font-medium text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl border border-red-500 hover:border-red-400 tracking-wide"
+              className="bg-black hover:bg-gray-800 text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-5 rounded-xl font-medium text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl border border-gray-500 hover:border-gray-400 tracking-wide"
             >
               ORÇAMENTO GRATUITO AGORA
             </a>
@@ -168,19 +168,20 @@ const Hero = () => {
             </button>
           </div>
 
-          {/* Confiança adicional */}
+          {/* Slogan */}
           <div 
             ref={el => elementsRef.current[6] = el}
             className="mt-12 sm:mt-16 lg:mt-20 opacity-0"
             style={{ animationDelay: '1200ms' }}
           >
             <p className="text-white/90 text-base sm:text-lg lg:text-xl mb-4 sm:mb-6 font-light tracking-wide">
-              Mais de 15 anos cuidando dos seus equipamentos eletrônicos
+              "Comprometidos com a excelência: cada cliente, cada detalhe, sempre com qualidade."
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8 lg:space-x-12 text-white/80 text-xs sm:text-sm font-light tracking-wide">
-              <span>• Técnicos Certificados</span>
-              <span>• Peças Originais</span>
-              <span>• Atendimento 6 dias/semana</span>
+              <span>• Celulares</span>
+              <span>• Computadores</span>
+              <span>• Notebooks</span>
+              <span>• Acessórios</span>
             </div>
           </div>
         </div>

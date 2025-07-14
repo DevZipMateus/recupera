@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Settings } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 
 const NavBar = () => {
@@ -32,9 +32,9 @@ const NavBar = () => {
 
   const navLinks = [
     { name: 'Início', id: 'home' },
+    { name: 'Sobre', id: 'about' },
     { name: 'Serviços', id: 'services' },
     { name: 'Como Funciona', id: 'how-it-works' },
-    { name: 'Sobre Nós', id: 'about' },
     { name: 'Avaliações', id: 'reviews' },
     { name: 'Contato', id: 'contact' },
   ];
@@ -52,15 +52,21 @@ const NavBar = () => {
         <div className="flex items-center">
           <a 
             href="#home" 
-            className="flex items-center space-x-2 text-tech-blue font-display font-bold text-lg sm:text-xl lg:text-2xl"
+            className="flex items-center space-x-3 text-black font-display font-bold text-lg sm:text-xl lg:text-2xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection('home');
             }}
           >
-            <Settings className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-red-600" />
-            <span className="hidden sm:inline">TechHelp <span className="text-red-600">Soluções</span></span>
-            <span className="sm:hidden">TechHelp</span>
+            <img 
+              src="/lovable-uploads/5d3ab6d7-376c-4bcb-a236-ea9456f031e3.png" 
+              alt="Recupera Logo" 
+              className="h-8 w-auto sm:h-10 lg:h-12"
+            />
+            <div className="flex flex-col">
+              <span className="hidden sm:inline text-black leading-none">RECUPERA</span>
+              <span className="hidden sm:inline text-xs text-gray-600 leading-none">Assistência Técnica</span>
+            </div>
           </a>
         </div>
 
@@ -70,14 +76,17 @@ const NavBar = () => {
             <a
               key={link.id}
               href={`#${link.id}`}
-              className="text-tech-blue hover:text-red-600 transition-colors duration-300 text-sm xl:text-base font-medium relative group"
+              className={cn(
+                "font-medium relative group transition-colors duration-300 text-sm xl:text-base",
+                scrolled ? "text-black hover:text-gray-700" : "text-white hover:text-gray-300"
+              )}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(link.id);
               }}
             >
               {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </nav>
@@ -86,21 +95,31 @@ const NavBar = () => {
         <Sheet>
           <SheetTrigger asChild>
             <button 
-              className="lg:hidden text-tech-blue p-2 rounded-md hover:bg-tech-lightgray/50 transition-colors" 
+              className={cn(
+                "lg:hidden p-2 rounded-md transition-colors",
+                scrolled ? "text-black hover:bg-gray-100" : "text-white hover:bg-white/10"
+              )}
               aria-label="Open menu"
             >
               <Menu size={20} className="sm:w-6 sm:h-6" />
             </button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[90%] sm:w-[85%] p-0 bg-gradient-to-br from-white to-tech-lightgray border-l-4 border-red-600">
+          <SheetContent side="right" className="w-[90%] sm:w-[85%] p-0 bg-gradient-to-br from-white to-gray-50 border-l-4 border-black">
             <div className="flex flex-col h-full">
-              <div className="flex justify-between items-center p-4 sm:p-6 border-b border-tech-lightgray">
-                <div className="flex items-center space-x-2 font-display font-bold text-lg sm:text-xl text-tech-blue">
-                  <Settings className="h-5 w-5 sm:h-6 sm:w-6 text-red-600" />
-                  <span>TechHelp <span className="text-red-600">Soluções</span></span>
+              <div className="flex justify-between items-center p-4 sm:p-6 border-b border-gray-200">
+                <div className="flex items-center space-x-3 font-display font-bold text-lg sm:text-xl text-black">
+                  <img 
+                    src="/lovable-uploads/5d3ab6d7-376c-4bcb-a236-ea9456f031e3.png" 
+                    alt="Recupera Logo" 
+                    className="h-6 w-auto sm:h-8"
+                  />
+                  <div className="flex flex-col">
+                    <span className="text-black leading-none">RECUPERA</span>
+                    <span className="text-xs text-gray-600 leading-none">Assistência Técnica</span>
+                  </div>
                 </div>
-                <SheetClose className="p-2 rounded-full hover:bg-tech-lightgray/70 transition-all">
-                  <X className="text-tech-blue" size={18} />
+                <SheetClose className="p-2 rounded-full hover:bg-gray-100 transition-all">
+                  <X className="text-black" size={18} />
                 </SheetClose>
               </div>
               <nav className="flex flex-col items-stretch justify-start flex-1 mt-4 sm:mt-8">
@@ -109,8 +128,8 @@ const NavBar = () => {
                     key={link.id}
                     href={`#${link.id}`}
                     className={cn(
-                      "text-tech-blue text-base sm:text-lg font-medium hover:bg-tech-lightgray/70 transition-all w-full text-center py-4 sm:py-6 px-4 flex items-center justify-center",
-                      "relative overflow-hidden after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-red-600 after:transition-all after:duration-300 hover:after:w-1/3"
+                      "text-black text-base sm:text-lg font-medium hover:bg-gray-100 transition-all w-full text-center py-4 sm:py-6 px-4 flex items-center justify-center",
+                      "relative overflow-hidden after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-1/3"
                     )}
                     style={{ animationDelay: `${index * 100}ms` }}
                     onClick={(e) => {
@@ -123,9 +142,9 @@ const NavBar = () => {
                   </a>
                 ))}
               </nav>
-              <div className="p-4 sm:p-6 border-t border-tech-lightgray mt-auto">
-                <div className="text-tech-gray text-xs sm:text-sm text-center">
-                  © 2024 TechHelp Soluções - Todos os direitos reservados
+              <div className="p-4 sm:p-6 border-t border-gray-200 mt-auto">
+                <div className="text-gray-600 text-xs sm:text-sm text-center">
+                  © 2024 Recupera Assistência Técnica - Todos os direitos reservados
                 </div>
               </div>
             </div>

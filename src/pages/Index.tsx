@@ -41,7 +41,7 @@ const Index = () => {
 
   return (
     <ClickSpark
-      sparkColor="#f97316"
+      sparkColor="#000000"
       sparkSize={12}
       sparkRadius={20}
       sparkCount={6}
@@ -49,18 +49,27 @@ const Index = () => {
       easing="ease-out"
       extraScale={1.2}
     >
-      <main className="min-h-screen flex flex-col antialiased overflow-x-hidden relative">
+      <main 
+        className="min-h-screen flex flex-col antialiased overflow-x-hidden relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/69a48e2b-d0fd-4b71-a842-abe00864f7fd.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         {/* Floating elements with JavaScript parallax */}
         <div 
           className="fixed top-20 left-10 w-3 h-3 bg-white/20 rounded-full animate-float -z-10"
           style={getParallaxStyle(0.1)}
         ></div>
         <div 
-          className="fixed top-32 right-16 w-2 h-2 bg-accent/30 rounded-full animate-float animation-delay-500 -z-10"
+          className="fixed top-32 right-16 w-2 h-2 bg-black/30 rounded-full animate-float animation-delay-500 -z-10"
           style={getParallaxStyle(0.15)}
         ></div>
         <div 
-          className="fixed bottom-32 left-20 w-4 h-4 bg-tech-green/20 rounded-full animate-float animation-delay-300 -z-10"
+          className="fixed bottom-32 left-20 w-4 h-4 bg-gray-400/20 rounded-full animate-float animation-delay-300 -z-10"
           style={getParallaxStyle(0.25)}
         ></div>
         <div 
