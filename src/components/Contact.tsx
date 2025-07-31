@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Phone, MapPin, Clock, MessageCircle, Award } from 'lucide-react';
 import ContactInfo from './contact/ContactInfo';
@@ -44,7 +43,7 @@ const Contact = () => {
     {
       icon: <MessageCircle className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />,
       title: "WhatsApp",
-      subtitle: "Resposta rápida",
+      subtitle: "Resposta rápida", 
       info: "(61) 98664-9007",
       description: "Atendimento instantâneo pelo WhatsApp. Envie fotos do problema e receba diagnóstico preliminar.",
       action: "Solicitar Orçamento",
