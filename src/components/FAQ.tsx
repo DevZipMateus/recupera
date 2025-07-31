@@ -62,7 +62,7 @@ const FAQ = () => {
     },
     {
       question: "Vocês atendem quais regiões?",
-      answer: "Atendemos Santa Maria e região metropolitana. Entre em contato para confirmar se atendemos sua localidade."
+      answer: "Atendemos Brasília e região metropolitana. Entre em contato para confirmar se atendemos sua localidade."
     },
     {
       question: "O que acontece se o equipamento não tiver conserto?",
@@ -133,7 +133,7 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://wa.me/5555999887766?text=Olá!%20Tenho%20algumas%20dúvidas%20sobre%20os%20serviços." 
+                href="https://wa.me/5561986649007?text=Olá!%20Tenho%20algumas%20dúvidas%20sobre%20os%20serviços." 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-tech-green hover:bg-tech-green/90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"

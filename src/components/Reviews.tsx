@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Star, Quote, CheckCircle, Users } from 'lucide-react';
 
@@ -126,7 +127,7 @@ const Reviews = () => {
             ref={el => elementsRef.current[2] = el}
             className="text-xl text-gray-600 max-w-3xl mx-auto opacity-0"
           >
-            Milhares de clientes satisfeitos confiam na TechHelp Soluções. 
+            Milhares de clientes satisfeitos confiam na Recupera Assistência Técnica. 
             Veja alguns depoimentos reais de quem já experimentou nossos serviços.
           </p>
         </div>
@@ -221,12 +222,12 @@ const Reviews = () => {
             Seja o Próximo Cliente Satisfeito!
           </h3>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Junte-se aos milhares de clientes que já experimentaram a excelência da TechHelp Soluções. 
+            Junte-se aos milhares de clientes que já experimentaram a excelência da Recupera Assistência Técnica. 
             Qualidade, agilidade e garantia em todos os nossos serviços.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <a 
-              href="https://wa.me/5555999887766?text=Olá!%20Vi%20os%20depoimentos%20e%20gostaria%20de%20um%20orçamento." 
+              href="https://wa.me/5561986649007?text=Olá!%20Vi%20os%20depoimentos%20e%20gostaria%20de%20um%20orçamento." 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105"
