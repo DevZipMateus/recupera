@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Star, Quote, CheckCircle, Users } from 'lucide-react';
 
@@ -41,22 +40,13 @@ const Reviews = () => {
 
   const reviews = [
     {
-      name: "Maria Silva",
-      service: "Reparo de TV Samsung 55\"",
-      rating: 5,
-      comment: "Excelente atendimento! Minha TV estava com problema na tela e foi consertada em 2 dias. Preço justo e garantia de 90 dias. Super recomendo a TechHelp!",
-      source: "Google",
-      verified: true,
-      date: "Há 2 semanas"
-    },
-    {
       name: "João Santos",
       service: "Troca de tela iPhone 13",
       rating: 5,
       comment: "Quebrei a tela do meu iPhone e em menos de 3 horas estava pronto! Peça original, preço honesto e atendimento nota 10. Já indiquei para vários amigos.",
       source: "WhatsApp",
       verified: true,
-      date: "Há 1 mês"
+      date: "Há 1 semana"
     },
     {
       name: "Ana Costa",
@@ -68,24 +58,6 @@ const Reviews = () => {
       date: "Há 3 semanas"
     },
     {
-      name: "Pedro Oliveira",
-      service: "Conserto de Máquina de Lavar",
-      rating: 5,
-      comment: "Atendimento domiciliar impecável. Técnico pontual, educado e resolveu o problema na primeira visita. Preço transparente e sem surpresas. Parabéns!",
-      source: "Indicação",
-      verified: true,
-      date: "Há 1 semana"
-    },
-    {
-      name: "Carla Mendes",
-      service: "Reparo de Micro-ondas",
-      rating: 5,
-      comment: "Micro-ondas parou de funcionar de repente. Vieram em casa, identificaram o problema e consertaram no mesmo dia. Excelente custo-benefício!",
-      source: "Google",
-      verified: true,
-      date: "Há 5 dias"
-    },
-    {
       name: "Roberto Lima",
       service: "Upgrade de Computador",
       rating: 5,
@@ -93,6 +65,33 @@ const Reviews = () => {
       source: "WhatsApp",
       verified: true,
       date: "Há 2 meses"
+    },
+    {
+      name: "Maria Silva",
+      service: "Reparo de Samsung Galaxy S22",
+      rating: 5,
+      comment: "Meu celular estava com problema na bateria e não carregava direito. Trocaram a bateria em 1 dia e ficou perfeito! Preço justo e garantia de 60 dias.",
+      source: "Google",
+      verified: true,
+      date: "Há 2 semanas"
+    },
+    {
+      name: "Carlos Mendes",
+      service: "Conserto de MacBook Pro",
+      rating: 5,
+      comment: "MacBook não estava ligando. Identificaram problema na placa-mãe e consertaram em 5 dias. Excelente atendimento e preço transparente. Recomendo!",
+      source: "Google",
+      verified: true,
+      date: "Há 1 mês"
+    },
+    {
+      name: "Fernanda Oliveira",
+      service: "Troca de conector iPhone 12",
+      rating: 5,
+      comment: "iPhone não carregava mais. Descobriram que era o conector de carga. Trocaram no mesmo dia e voltou a funcionar perfeitamente. Super rápidos!",
+      source: "Indicação",
+      verified: true,
+      date: "Há 5 dias"
     }
   ];
 
