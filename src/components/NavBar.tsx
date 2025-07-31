@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { Menu, X } from 'lucide-react';
@@ -42,10 +41,10 @@ const NavBar = () => {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out bg-white/95 backdrop-blur-md shadow-lg",
         scrolled 
-          ? "py-2 sm:py-3 bg-white/95 backdrop-blur-md shadow-lg" 
-          : "py-3 sm:py-4 bg-transparent"
+          ? "py-2 sm:py-3" 
+          : "py-3 sm:py-4"
       )}
     >
       <div className="container mx-auto px-3 sm:px-4 lg:px-6 xl:px-8 2xl:px-12 flex justify-between items-center">
@@ -64,10 +63,10 @@ const NavBar = () => {
               className="h-6 w-auto sm:h-8 lg:h-10 xl:h-12 flex-shrink-0"
             />
             <div className="flex flex-col">
-              <span className="hidden xs:inline leading-none transition-colors duration-300 text-sm sm:text-base lg:text-lg xl:text-xl text-white">
+              <span className="hidden xs:inline leading-none transition-colors duration-300 text-sm sm:text-base lg:text-lg xl:text-xl text-black">
                 RECUPERA
               </span>
-              <span className="hidden sm:inline text-xs lg:text-sm leading-none transition-colors duration-300 text-gray-300">
+              <span className="hidden sm:inline text-xs lg:text-sm leading-none transition-colors duration-300 text-gray-600">
                 Assistência Técnica
               </span>
             </div>
@@ -80,7 +79,7 @@ const NavBar = () => {
             <a
               key={link.id}
               href={`#${link.id}`}
-              className="font-medium relative group transition-colors duration-300 text-sm xl:text-base py-2 px-1 text-white hover:text-gray-300"
+              className="font-medium relative group transition-colors duration-300 text-sm xl:text-base py-2 px-1 text-black hover:text-gray-600"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(link.id);
@@ -96,7 +95,7 @@ const NavBar = () => {
         <Sheet>
           <SheetTrigger asChild>
             <button 
-              className="lg:hidden p-2 rounded-md transition-colors touch-manipulation text-white hover:bg-white/10"
+              className="lg:hidden p-2 rounded-md transition-colors touch-manipulation text-black hover:bg-gray-100"
               aria-label="Open menu"
             >
               <Menu size={18} className="sm:w-5 sm:h-5" />
