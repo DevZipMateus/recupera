@@ -64,16 +64,10 @@ const NavBar = () => {
               className="h-6 w-auto sm:h-8 lg:h-10 xl:h-12 flex-shrink-0"
             />
             <div className="flex flex-col">
-              <span className={cn(
-                "hidden xs:inline leading-none transition-colors duration-300 text-sm sm:text-base lg:text-lg xl:text-xl",
-                scrolled ? "text-black" : "text-white"
-              )}>
+              <span className="hidden xs:inline leading-none transition-colors duration-300 text-sm sm:text-base lg:text-lg xl:text-xl text-white">
                 RECUPERA
               </span>
-              <span className={cn(
-                "hidden sm:inline text-xs lg:text-sm leading-none transition-colors duration-300",
-                scrolled ? "text-gray-600" : "text-gray-300"
-              )}>
+              <span className="hidden sm:inline text-xs lg:text-sm leading-none transition-colors duration-300 text-gray-300">
                 Assistência Técnica
               </span>
             </div>
@@ -86,10 +80,7 @@ const NavBar = () => {
             <a
               key={link.id}
               href={`#${link.id}`}
-              className={cn(
-                "font-medium relative group transition-colors duration-300 text-sm xl:text-base py-2 px-1",
-                scrolled ? "text-black hover:text-gray-700" : "text-white hover:text-gray-300"
-              )}
+              className="font-medium relative group transition-colors duration-300 text-sm xl:text-base py-2 px-1 text-white hover:text-gray-300"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(link.id);
@@ -105,10 +96,7 @@ const NavBar = () => {
         <Sheet>
           <SheetTrigger asChild>
             <button 
-              className={cn(
-                "lg:hidden p-2 rounded-md transition-colors touch-manipulation",
-                scrolled ? "text-black hover:bg-gray-100" : "text-white hover:bg-white/10"
-              )}
+              className="lg:hidden p-2 rounded-md transition-colors touch-manipulation text-white hover:bg-white/10"
               aria-label="Open menu"
             >
               <Menu size={18} className="sm:w-5 sm:h-5" />
