@@ -42,11 +42,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Qual é o prazo para conserto dos equipamentos?",
-      answer: "O prazo varia conforme o tipo de equipamento e problema identificado. Celulares geralmente ficam prontos em 24-48h, TVs em 3-5 dias úteis, e eletrodomésticos podem levar de 5-10 dias úteis, dependendo da disponibilidade de peças."
+      answer: "O prazo varia conforme o tipo de equipamento e problema identificado. Celulares geralmente ficam prontos em 24-48h, e computadores podem levar de 3-7 dias úteis, dependendo da disponibilidade de peças."
     },
     {
       question: "Vocês oferecem garantia nos serviços?",
-      answer: "Sim! Oferecemos garantia de 90 dias para TVs e eletrodomésticos, 60 dias para celulares e 30 dias para computadores. A garantia cobre defeitos relacionados ao serviço executado."
+      answer: "Sim! Oferecemos garantia de 60 dias para celulares e 30 dias para computadores. A garantia cobre defeitos relacionados ao serviço executado."
     },
     {
       question: "Como funciona o orçamento?",
@@ -57,20 +57,20 @@ const FAQ = () => {
       answer: "Sempre que possível, utilizamos peças originais. Quando não disponíveis, usamos peças compatíveis de alta qualidade com a mesma garantia. Sempre informamos sobre o tipo de peça antes do serviço."
     },
     {
-      question: "Fazem atendimento em domicílio?",
-      answer: "Sim! Para eletrodomésticos de grande porte (geladeiras, máquinas de lavar, etc.) oferecemos atendimento em domicílio. Para outros equipamentos, você pode trazer até nossa loja."
-    },
-    {
       question: "Quais formas de pagamento vocês aceitam?",
       answer: "Aceitamos dinheiro, cartão de débito/crédito (à vista ou parcelado), PIX e transferência bancária. Para orçamentos acima de R$ 200, oferecemos parcelamento em até 3x sem juros."
     },
     {
       question: "Vocês atendem quais regiões?",
-      answer: "Atendemos Santa Maria e região metropolitana. Para atendimento domiciliar, cobrimos um raio de 30km da nossa sede. Entre em contato para confirmar se atendemos sua localidade."
+      answer: "Atendemos Santa Maria e região metropolitana. Entre em contato para confirmar se atendemos sua localidade."
     },
     {
       question: "O que acontece se o equipamento não tiver conserto?",
       answer: "Se após a avaliação concluirmos que o equipamento não tem viabilidade de reparo, não cobramos nada pela análise. Oferecemos orientações sobre descarte adequado ou possibilidade de aproveitamento de peças."
+    },
+    {
+      question: "Vocês fazem backup dos dados antes do reparo?",
+      answer: "Sim! Sempre que possível, fazemos backup dos dados importantes antes de iniciar qualquer reparo em celulares e computadores para garantir a segurança das suas informações."
     }
   ];
 
