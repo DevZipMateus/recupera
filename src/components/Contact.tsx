@@ -1,5 +1,6 @@
+
 import React, { useEffect, useRef } from 'react';
-import { Phone, MapPin, Clock, MessageCircle, Award } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageCircle, Award, Instagram } from 'lucide-react';
 import ContactInfo from './contact/ContactInfo';
 
 const Contact = () => {
@@ -52,7 +53,7 @@ const Contact = () => {
       popular: true
     },
     {
-      icon: <MapPin className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />,
+      icon: <Instagram className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />,
       title: "Instagram",
       subtitle: "Redes sociais",
       info: "@recuperaassistencia",
