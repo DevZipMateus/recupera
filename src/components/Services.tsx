@@ -38,7 +38,7 @@ const Services = () => {
     title: "Conserto de Celulares",
     subtitle: "iPhone e Android",
     description: "Troca de tela, bateria, conector de carga, câmera, alto-falante. Especialistas em todas as marcas.",
-    features: ["Reparo em 2h", "Peças AAA+", "Garantia de 60 dias", "Teste completo"],
+    features: ["Reparo em 2h", "Peças AAA+", "Garantia de 90 dias", "Teste completo"],
     popular: true
   }, {
     icon: <Laptop className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16" />,

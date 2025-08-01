@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from 'lucide-react';
@@ -46,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "Vocês oferecem garantia nos serviços?",
-      answer: "Sim! Oferecemos garantia de 60 dias para celulares e 30 dias para computadores. A garantia cobre defeitos relacionados ao serviço executado."
+      answer: "Sim! Oferecemos garantia de 90 dias para celulares e 30 dias para computadores. A garantia cobre defeitos relacionados ao serviço executado."
     },
     {
       question: "Como funciona o orçamento?",
