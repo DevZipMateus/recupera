@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 import { Smartphone, Laptop, CheckCircle } from 'lucide-react';
+
 const Services = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
   const sectionRef = useRef<HTMLElement | null>(null);
   const elementsRef = useRef<(HTMLElement | null)[]>([]);
+
   useEffect(() => {
     observerRef.current = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -24,15 +26,18 @@ const Services = () => {
     }, {
       threshold: 0.1
     });
+
     if (sectionRef.current) {
       observerRef.current.observe(sectionRef.current);
     }
+
     return () => {
       if (observerRef.current && sectionRef.current) {
         observerRef.current.unobserve(sectionRef.current);
       }
     };
   }, []);
+
   const services = [{
     icon: <Smartphone className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16" />,
     title: "Conserto de Celulares",
@@ -48,6 +53,7 @@ const Services = () => {
     features: ["Backup incluído", "Formatação completa", "Antivírus premium", "Suporte técnico"],
     popular: false
   }];
+
   return <section id="services" ref={sectionRef} className="py-16 sm:py-20 lg:py-24 xl:py-28 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
@@ -133,4 +139,5 @@ const Services = () => {
       </div>
     </section>;
 };
+
 export default Services;

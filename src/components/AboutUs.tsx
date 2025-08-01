@@ -43,7 +43,7 @@ const AboutUs = () => {
   const stats = [
     {
       icon: <Award className="h-8 w-8" />,
-      number: "15+",
+      number: "7+",
       label: "Anos de Experiência",
       description: "Atendendo clientes com excelência"
     },
@@ -101,7 +101,7 @@ const AboutUs = () => {
           >
             Líderes em Assistência Técnica
             <br />
-            <span className="text-red-600">Há Mais de 15 Anos</span>
+            <span className="text-red-600">Há Mais de 7 Anos</span>
           </h2>
           <p 
             ref={el => elementsRef.current[2] = el}
@@ -140,7 +140,7 @@ const AboutUs = () => {
             <h3 className="text-3xl font-bold text-black mb-6">Nossa História</h3>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Fundada em <span className="font-semibold text-black">2008</span>, a TechHelp Soluções nasceu do sonho de transformar a relação entre pessoas e tecnologia. Começamos como uma pequena oficina especializada em televisões e hoje somos referência em assistência técnica multimarcas.
+                Fundada em <span className="font-semibold text-black">2017</span>, a TechHelp Soluções nasceu do sonho de transformar a relação entre pessoas e tecnologia. Começamos como uma pequena oficina especializada em televisões e hoje somos referência em assistência técnica multimarcas.
               </p>
               <p>
                 Nossa trajetória é marcada pela <span className="font-semibold text-red-600">inovação constante</span> e pelo compromisso inabalável com a satisfação dos nossos clientes. Investimos continuamente em capacitação técnica, equipamentos de última geração e processos que garantem a máxima qualidade.
