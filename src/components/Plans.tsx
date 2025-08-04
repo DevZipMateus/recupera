@@ -139,7 +139,7 @@ const Plans = () => {
                     : "bg-white hover:bg-gray-50 text-black border border-gray-300"
                 )}
                 onClick={() => {
-                  window.open('https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20o%20plano%20' + plan.name, '_blank');
+                  window.open('https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20o%20plano%20' + plan.name, '_blank');
                 }}
               >
                 {plan.ctaText}

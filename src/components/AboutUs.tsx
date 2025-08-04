@@ -188,7 +188,7 @@ const AboutUs = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <a 
-              href="https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20conhecer%20melhor%20os%20serviços%20da%20Recupera." 
+              href="https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20conhecer%20melhor%20os%20serviços%20da%20Recupera." 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105"

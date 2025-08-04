@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 import { Smartphone, Laptop, CheckCircle } from 'lucide-react';
@@ -98,7 +99,7 @@ const Services = () => {
               </ul>
               
               <button className={cn("w-full py-3 sm:py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base", service.popular ? "bg-red-600 hover:bg-red-700 text-white" : "bg-black hover:bg-gray-800 text-white")} onClick={() => {
-            window.open('https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20' + service.title, '_blank');
+            window.open('https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20' + service.title, '_blank');
           }}>
                 SOLICITAR ORÇAMENTO
               </button>
@@ -130,7 +131,7 @@ const Services = () => {
           </div>
           <div className="mt-6 sm:mt-8">
             <button onClick={() => {
-            window.open('https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20um%20orçamento%20personalizado%20para%20meus%20equipamentos.', '_blank');
+            window.open('https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20um%20orçamento%20personalizado%20para%20meus%20equipamentos.', '_blank');
           }} className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base lg:text-lg transition-all duration-300 transform hover:scale-105">
               SOLICITAR ORÇAMENTO PERSONALIZADO
             </button>

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { MessageCircle, Search, Wrench, CheckCircle, Clock, Shield } from 'lucide-react';
 
@@ -186,7 +187,7 @@ const HowItWorks = () => {
             </p>
             <div className="flex flex-col gap-4">
               <a 
-                href="https://wa.me/5555999887766?text=Olá!%20Preciso%20de%20um%20diagnóstico%20para%20meu%20equipamento." 
+                href="https://wa.me/5561986649007?text=Olá!%20Preciso%20de%20um%20diagnóstico%20para%20meu%20equipamento." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105"

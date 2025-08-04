@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 
@@ -23,7 +24,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ setRef }) => {
       icon: <MessageCircle className="h-5 w-5" />,
       title: "WhatsApp",
       details: "+55 (61) 98664-9007",
-      href: "https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20contabilidade."
+      href: "https://wa.me/5561986649007?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Recupera%20Assistência%20Técnica."
     },
     {
       icon: <MapPin className="h-5 w-5" />,
