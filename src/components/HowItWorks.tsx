@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { MessageCircle, Search, Wrench, CheckCircle, Clock, Shield } from 'lucide-react';
 
@@ -142,7 +141,7 @@ const HowItWorks = () => {
             className="opacity-0"
           >
             <h3 className="text-3xl font-bold text-black mb-6">
-              Por Que Escolher a TechHelp?
+              Por Que Escolher a Recupera?
             </h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">

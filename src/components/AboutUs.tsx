@@ -107,7 +107,7 @@ const AboutUs = () => {
             ref={el => elementsRef.current[2] = el}
             className="text-xl text-gray-600 max-w-4xl mx-auto opacity-0"
           >
-            Somos a TechHelp Soluções, referência em assistência técnica especializada. 
+            Somos a Recupera Soluções, referência em assistência técnica especializada. 
             Nossa missão é devolver a vida aos seus equipamentos eletrônicos com qualidade, 
             agilidade e total transparência.
           </p>
@@ -140,7 +140,7 @@ const AboutUs = () => {
             <h3 className="text-3xl font-bold text-black mb-6">Nossa História</h3>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Fundada em <span className="font-semibold text-black">2017</span>, a TechHelp Soluções nasceu do sonho de transformar a relação entre pessoas e tecnologia. Começamos como uma pequena oficina especializada em televisões e hoje somos referência em assistência técnica multimarcas.
+                Fundada em <span className="font-semibold text-black">2017</span>, a Recupera Soluções nasceu do sonho de transformar a relação entre pessoas e tecnologia. Começamos como uma pequena oficina especializada em televisões e hoje somos referência em assistência técnica multimarcas.
               </p>
               <p>
                 Nossa trajetória é marcada pela <span className="font-semibold text-red-600">inovação constante</span> e pelo compromisso inabalável com a satisfação dos nossos clientes. Investimos continuamente em capacitação técnica, equipamentos de última geração e processos que garantem a máxima qualidade.
@@ -188,7 +188,7 @@ const AboutUs = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <a 
-              href="https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20conhecer%20melhor%20os%20serviços%20da%20TechHelp." 
+              href="https://wa.me/5555999887766?text=Olá!%20Gostaria%20de%20conhecer%20melhor%20os%20serviços%20da%20Recupera." 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 transform hover:scale-105"

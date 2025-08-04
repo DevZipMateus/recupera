@@ -62,7 +62,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Cores específicas da TechHelp - mudança de laranja para vermelho
+				// Cores específicas da Recupera - mudança de laranja para vermelho
 				tech: {
 					blue: 'hsl(215, 70%, 45%)',
 					darkblue: 'hsl(215, 80%, 35%)',
